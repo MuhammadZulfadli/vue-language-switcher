@@ -22,18 +22,25 @@ import { onMounted, ref } from "vue";
 import axios from "axios";
 export default {
   setup() {
+    //   state untuk menampung data
     let posts = ref([]);
+
+    // methods - funciton untuk get data from api
+    async function getlist() {
+      try {
+        const response = await axios.get("https://api.punkapi.com/v2/beers");
+        posts.value = response.data;
+        console.log(posts.value);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+
+    // Memanggil function getlist() pada mounted
     onMounted(() => {
-      axios
-        .get("https://api.punkapi.com/v2/beers")
-        .then((result) => {
-          posts.value = result.data;
-          console.log(posts.value);
-        })
-        .catch((err) => {
-          console.log(err);
-        });
+      getlist();
     });
+
     return { posts };
   },
 };
