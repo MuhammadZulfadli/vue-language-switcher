@@ -2,7 +2,7 @@
   "nav": {
     "home": "Beranda",
     "about": "Tentang",
-    "posts": "Posts"
+    "posts": "Data Post"
   },
   "beranda": {
     "message": "Selamat datang di Vue.JS",
@@ -13,5 +13,8 @@
   },
   "about": {
     "message": "Ini adalah halaman tentang aplikasi"
+  },
+  "posts": {
+    "title": "Data Minuman Beer"
   }
 }

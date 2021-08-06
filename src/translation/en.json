@@ -13,5 +13,8 @@
   },
   "about": {
     "message": "This is an about page"
+  },
+  "posts": {
+    "title": "This is beers data"
   }
 }

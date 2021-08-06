@@ -3,6 +3,9 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min";
+
 import en from "./translation/en.json";
 import id from "./translation/id.json";
 import { createI18n } from "vue-i18n";
