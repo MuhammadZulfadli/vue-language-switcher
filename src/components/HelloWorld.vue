@@ -1,14 +1,13 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1>{{ t("beranda.message") }}</h1>
     <p>
-      For a guide and recipes on how to configure / customize this project,<br />
-      check out the
+      {{ t("beranda.paragraf") }}
       <a href="https://cli.vuejs.org" target="_blank" rel="noopener"
         >vue-cli documentation</a
       >.
     </p>
-    <h3>Installed CLI Plugins</h3>
+    <h3>{{ t("beranda.installed") }}</h3>
     <ul>
       <li>
         <a
@@ -43,7 +42,7 @@
         >
       </li>
     </ul>
-    <h3>Essential Links</h3>
+    <h3>{{ t("beranda.essentials") }}</h3>
     <ul>
       <li>
         <a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a>
@@ -67,7 +66,7 @@
         <a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a>
       </li>
     </ul>
-    <h3>Ecosystem</h3>
+    <h3>{{ t("beranda.ecosystem ") }}</h3>
     <ul>
       <li>
         <a href="https://router.vuejs.org" target="_blank" rel="noopener"
@@ -103,10 +102,17 @@
 </template>
 
 <script>
+import { useI18n } from "vue-i18n";
 export default {
   name: "HelloWorld",
   props: {
     msg: String,
+  },
+
+  setup() {
+    const { t, locale } = useI18n();
+
+    return { t, locale };
   },
 };
 </script>

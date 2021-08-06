@@ -1,0 +1,17 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang",
+    "posts": "Posts"
+  },
+  "beranda": {
+    "message": "Selamat datang di Vue.JS",
+    "paragraf": "Untuk panduan dan cara untuk mengkonfigurasi / kustomisasi poyek ini, silahkan cek",
+    "installed": "Plugin CLI yang telah di install",
+    "essentials": "Link Penting",
+    "ecosystem": "Ekosistem"
+  },
+  "about": {
+    "message": "Ini adalah halaman tentang aplikasi"
+  }
+}

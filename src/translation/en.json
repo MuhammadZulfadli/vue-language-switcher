@@ -1,0 +1,17 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "posts": "Posts"
+  },
+  "beranda": {
+    "message": "Welcome to Your Vue.js App",
+    "paragraf": "For a guide and recipes on how to configure / customize this project, check out the",
+    "installed": "Installed CLI Plugin",
+    "essentials": "Essential Link",
+    "ecosystem": "Ecosystems"
+  },
+  "about": {
+    "message": "This is an about page"
+  }
+}

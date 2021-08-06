@@ -1,10 +1,33 @@
 <template>
+  <Headers />
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">{{ t("nav.home") }}</router-link> |
+    <router-link to="/about">{{ t("nav.about") }}</router-link> |
+    <router-link to="/posts">{{ t("nav.posts") }}</router-link>
   </div>
   <router-view />
 </template>
+
+<script>
+import Headers from "./components/Header.vue";
+import { useI18n } from "vue-i18n";
+export default {
+  setup() {
+    const { t, locale } = useI18n();
+
+    return { t, locale };
+  },
+  components: {
+    Headers,
+  },
+
+  data() {
+    return {
+      lang: "en",
+    };
+  },
+};
+</script>
 
 <style lang="scss">
 #app {
